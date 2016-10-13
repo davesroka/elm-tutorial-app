@@ -7,6 +7,8 @@ import Models exposing (Model)
 import Players.List
 import Players.Edit
 import Players.Models exposing (PlayerId)
+import Games.List
+import Games.Models exposing (GameId)
 import Routing exposing (Route(..))
 
 
@@ -24,6 +26,9 @@ page model =
 
         PlayerRoute id ->
             playerEditPage model id
+
+        GamesRoute ->
+            Html.App.map GamesMsg (Games.List.view model.games)
 
         NotFoundRoute ->
             notFoundView

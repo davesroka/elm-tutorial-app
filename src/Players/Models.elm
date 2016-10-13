@@ -9,6 +9,7 @@ type alias Player =
     { id : PlayerId
     , name : String
     , level : Int
+    , hometown : String
     }
 
 
@@ -17,4 +18,5 @@ new =
     { id = 0
     , name = ""
     , level = 1
+    , hometown = "Durham"
     }

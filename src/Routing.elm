@@ -9,6 +9,7 @@ import Players.Models exposing (PlayerId)
 type Route
     = PlayersRoute
     | PlayerRoute PlayerId
+    | GamesRoute
     | NotFoundRoute
 
 
@@ -18,6 +19,7 @@ matchers =
         [ format PlayersRoute (s "")
         , format PlayerRoute (s "players" </> int)
         , format PlayersRoute (s "players")
+        , format GamesRoute (s "games")
         ]
 
 

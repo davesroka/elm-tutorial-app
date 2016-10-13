@@ -3,7 +3,7 @@
     {
       "id": 2,
       "name": "Lance",
-      "level": 1
+      "level": 20
     },
     {
       "id": 3,
@@ -29,6 +29,32 @@
       "id": 7,
       "name": "Jaime",
       "level": 1
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "name": "First Game",
+      "players": [
+        {
+          "id": 2
+        },
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Second Game",
+      "players": [
+        {
+          "id": 5
+        },
+        {
+          "id": 7
+        }
+      ]
     }
   ]
 }
